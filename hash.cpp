@@ -13,8 +13,6 @@ HashTable::~HashTable()
 }
 void HashTable::create(int m, int hash)
 {
-    cout<<"Tamanho: "<<m<<endl;
-    cout<<"Opcao: "<<hash<<endl;
     tabela=new List[m];
     tam=m;
     op=hash;
@@ -63,7 +61,10 @@ void HashTable::inserir(int num)
     }
     No *a=insert(aux,num);
     if(a!=NULL)
+    {
         tabela[aux].insere(a);
+        num_elementos+=1;
+    }
 
 
 }
@@ -93,7 +94,6 @@ int HashTable::hashTranformaRaiz(int num)
 {
     int aux=muda_Base(num);
     int t=hashdiv(aux);
-    //cout<<aux<<" hash "<<t<<endl;
     return hashdiv(aux);
 }
 
@@ -108,7 +108,6 @@ int HashTable::muda_Base(int num)
     {
         vet[i]=quociente%divisor;
         quociente=quociente/divisor;
-        cout<<vet[i]<<endl;
         i--;
         if(quociente<divisor)
             vet[i]=quociente;
@@ -126,7 +125,6 @@ int HashTable::muda_Base(int num)
         b+=1;
         a+=gambi;
     }
-    cout<<a<<endl;
     return a;
 }
 
@@ -146,6 +144,10 @@ int  HashTable::numero_colisoes()
 
         if(tabela[i].get_tamanho()>0)
             colisoes+=tabela[i].get_tamanho();
-        }
+    }
     return colisoes;
+}
+
+int HashTable::get_num_elementos(){
+   return num_elementos;
 }

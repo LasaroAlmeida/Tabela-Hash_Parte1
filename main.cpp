@@ -2,38 +2,61 @@
 #include "hash.h"
 #include <stdlib.h>
 #include <time.h>
+#include <iomanip>
 using namespace std;
-void gerencia(HashTable a){
-    int tam,num_elementos,op;
-    cout<<"Tamanho da Tabela: ";
-    cin>>tam;
-    cout<<"Numero de Elementos :";
-    cin>>num_elementos;
-    cout<<"Digite:\n0->Hash da Divisao\n1->Hash da Multiplicacao\n2->Hash da Transformacao de Raiz"<<endl;
-    cin >> op;
-
-
-    srand(time(NULL));
-    int temp;
-    /*for(int i=0; i<this->tam; i++)
+void gerencia()
+{
+    int tam=-1,num_elementos=-1,aux;
+    while(true)
     {
-        temp=(rand()%200000)+(-5000);
-        vet[i]=auxiliar[i]=temp;
-    }*/
+        while(tam<1)
+        {
+            cout<<"Tamanho da Tabela: ";
+            cin>>tam;
+        }
+        while(num_elementos<1)
+        {
+            cout<<"Numero de Elementos :";
+            cin>>num_elementos;
+        }
+        HashTable tabela[3];
+
+        tabela[0].create(tam,0);
+        tabela[1].create(tam,1);
+        tabela[2].create(tam,2);
+
+        srand(time(NULL));
+        int temp;
+        for(int i=0; i<num_elementos;)
+        {
+            temp=(rand()%20000000);
+            if(tabela[0].get_num_elementos()< num_elementos)
+            {
+                tabela[0].inserir(temp);
+                tabela[1].inserir(temp);
+                tabela[2].inserir(temp);
+                i++;
+            }
+        }
+        string hashs[]= {"Divisao", "Multiplicacao", "MinhaHash"};
+        cout<<endl;
+        for(int i=0; i<3; i++)
+        {
+            cout<<setw(15)<<left<<hashs[i]<<setw(11)<<"ÜÜÜÜÜÜÜÜÜÜÜÜ "<<right<<tabela[i].numero_colisoes()<<" colisao(oes)"<<endl;
+        }
+        tam=-1;
+        num_elementos=-1;
+        cout<<"\nDigite -1 para sair ou 0 para continuar: "<<endl;
+        cin>>aux;
+        if(aux==-1)
+            break;
+    }
 }
 
 int main()
 {
-	cout<<"Tabela Hash"<<endl;
-	HashTable a;
-	///0->Divisao /// 1->Multiplicacao /// 2-> Transformacao de Raiz
-
-   a.create(7,0);
-   for(int i=0;i<10;i++){
-       a.inserir(i);
-   }
-   a.imprime();
-   cout<<a.numero_colisoes()<<endl;
-   return 0;
+    cout<<"Tabela Hash"<<endl;
+    gerencia();
+    return 0;
 }
 

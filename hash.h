@@ -17,12 +17,13 @@ public:
     No *lookup(int key,int data);
     void destroy();
     int numero_colisoes();
+    int get_num_elementos();
 
 
 private:
     List *tabela;
-    int colisoes=0;
-    int tam;
+    long long int  colisoes=0;
+    int tam,num_elementos=0;
     int op;///1->Divisao /// 2->Multiplicacao /// 3-> Transformacao de Raiz
     int muda_Base(int num);
 

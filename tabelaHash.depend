@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1601995493 source:c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\hash.cpp
+1602018581 source:c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\hash.cpp
 	<iostream>
 	"hash.h"
 	<math.h>
@@ -8,13 +8,14 @@
 	<iostream>
 	"list.h"
 
-1601995900 source:c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\main.cpp
+1602021854 source:c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\main.cpp
 	<iostream>
 	"hash.h"
 	<stdlib.h>
 	<time.h>
+	<iomanip>
 
-1601995388 c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\hash.h
+1602021375 c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\hash.h
 	"list.h"
 	"No.h"
 
