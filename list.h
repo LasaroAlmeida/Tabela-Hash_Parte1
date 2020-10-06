@@ -5,13 +5,17 @@ class List{
    public:
       List();
       ~List();
-      void insere(int key);
+      void insere(No *p);
       bool pesquisa(int num);
       void imprime();
+      No *pesquisa(No *p);
+      int get_tamanho();
+
 
    private:
        No *first;
        No *last;
+       int tamanho=-1;
 
 
 };

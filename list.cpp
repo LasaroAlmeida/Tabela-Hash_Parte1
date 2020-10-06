@@ -17,29 +17,39 @@ List::~List()
         aux=a;
     }
 }
-void List::insere(int key)
+int List::get_tamanho(){
+return tamanho;
+}
+void List::insere(No *p)
 {
-    No *aux=new No();
-    aux->setInfo(key);
-    aux->setProx(NULL);
+
     if(last!=NULL)
     {
-        last->setProx(aux);
+        last->setProx(p);
     }
-    last=aux;
+    last=p;
     if(first==NULL)
     {
-        first=aux;
+        first=p;
     }
+    tamanho+=1;
 
 }
-bool List::pesquisa(int num){
+bool  List::pesquisa(int num){
    for(No * atual=first;atual!=NULL;atual=atual->getProximo()){
        if(atual->getInfo()==num){
         return true;
        }
    }
    return false;
+}
+No *List::pesquisa(No *p){
+    for(No * atual=first;atual!=NULL;atual=atual->getProximo()){
+       if(atual==p){
+        return atual;
+       }
+   }
+   return NULL;
 
 }
 void List::imprime(){

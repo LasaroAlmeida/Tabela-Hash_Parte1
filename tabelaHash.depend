@@ -1,21 +1,24 @@
 # depslib dependency file v1.0
-1601926983 source:c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\hash.cpp
+1601995493 source:c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\hash.cpp
 	<iostream>
 	"hash.h"
+	<math.h>
 
-1601926337 source:c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\list.cpp
+1601995298 source:c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\list.cpp
 	<iostream>
 	"list.h"
 
-1601926827 source:c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\main.cpp
+1601995900 source:c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\main.cpp
 	<iostream>
 	"hash.h"
+	<stdlib.h>
+	<time.h>
 
-1601926754 c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\hash.h
+1601995388 c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\hash.h
 	"list.h"
 	"No.h"
 
-1601926032 c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\list.h
+1601994974 c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\list.h
 	"No.h"
 
 1601588431 c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\no.h
