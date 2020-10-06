@@ -24,3 +24,21 @@
 
 1601588431 c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\exercio2ed\testf\no.h
 
+1602018581 source:c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\tabela-hash_parte1\hash.cpp
+	<iostream>
+	"hash.h"
+	<math.h>
+
+1602021375 c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\tabela-hash_parte1\hash.h
+	"list.h"
+	"No.h"
+
+1601994974 c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\tabela-hash_parte1\list.h
+	"No.h"
+
+1601588431 c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\tabela-hash_parte1\no.h
+
+1601995298 source:c:\users\lasaro almeida\documents\codeblocs\quartoperiodo\tabela-hash_parte1\list.cpp
+	<iostream>
+	"list.h"
+

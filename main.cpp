@@ -42,7 +42,7 @@ void gerencia()
         cout<<endl;
         for(int i=0; i<3; i++)
         {
-            cout<<setw(15)<<left<<hashs[i]<<setw(11)<<"ÜÜÜÜÜÜÜÜÜÜÜÜ "<<right<<tabela[i].numero_colisoes()<<" colisao(oes)"<<endl;
+            cout<<setw(15)<<left<<hashs[i]<<setw(11)<<right<<tabela[i].numero_colisoes()<<" colisao(oes)"<<endl;
         }
         tam=-1;
         num_elementos=-1;
